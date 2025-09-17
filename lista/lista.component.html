@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Lista de Comprar</h1>
+
+    <form #frm="ngForm">
+        <label for="produto">Produto: </label>
+        <input type="text" id="produto" name="produto" [(ngModel)] = "produto">
+
+        <button (click)="adicionarItem()">Adicionar Item</button>
+        <button (click)="removerItem()">Remover Item</button>
+    </form>
+</div>
