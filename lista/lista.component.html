@@ -1,11 +1,11 @@
 <div class="container">
-    <h1>Lista de Comprar</h1>
+    <h1>Lista de Compras</h1>
 
     <form #frm="ngForm">
         <label for="produto">Produto: </label>
         <input type="text" id="produto" name="produto" [(ngModel)] = "produto">
 
         <button (click)="adicionarItem()">Adicionar Item</button>
-        <button (click)="limparLista()">Limpar</button>
+        <button (click)="limparItens()">Limpar</button>
     </form>
 </div>

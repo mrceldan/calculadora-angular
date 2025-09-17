@@ -18,6 +18,9 @@ export class ListaComponent {
     lista: listaItem[] = [];
 
     adicionarItem(){
+      if (!this.verificar()) {
+        return
+      }
       //instanciando um objeto do tipo listaItens
       let itemLista = new listaItem;
       itemLista.nome = this.produto;
@@ -32,5 +35,13 @@ export class ListaComponent {
 
     limparItens(){
       this.lista = [];
+    }
+
+    verificar(){
+      if(this.produto === ''){
+        console.log("É necerrário digitar para adicionar algum item")
+        return false;
+      }
+      return true;
     }
 }
