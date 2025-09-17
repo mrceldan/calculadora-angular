@@ -24,22 +24,13 @@ export class ListaComponent {
       itemLista.id = this.lista.length + 1;
 
       this.lista.push(itemLista);
-
       this.produto = '';
 
       console.table(this.lista);
+
     }
 
     limparItens(){
-      //instanciando um objeto do tipo listaItens
-      let itemLista = new listaItem;
-      itemLista.nome = this.produto;
-      itemLista.id = this.lista.length - 1;
-
-      this.lista.push(itemLista);
-
-      this.produto = '';
-
-      console.table(this.lista);
+      this.lista = [];
     }
 }
